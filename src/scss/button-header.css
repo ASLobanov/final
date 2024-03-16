@@ -1,0 +1,33 @@
+.button-header {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.button-header--burger {
+  background-image: url(../icon/burger.svg);
+}
+
+.button-header--call {
+  background-image: url(../icon/call.svg);
+}
+.button-header--chat {
+  background-image: url(../icon/chat.svg);
+}
+.button-header--profile {
+  background-image: url(../icon/profile.svg);
+}
+.button-header--repair {
+  background-image: url(../icon/repair.svg);
+}
+.button-header--checkstatus {
+  background-image: url(../icon/checkstatus.svg);
+}

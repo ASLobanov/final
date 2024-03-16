@@ -1,0 +1,222 @@
+.brand {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+
+.brand__parttitle {
+  display: flex;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+}
+.brand__parttitle::before {
+  display: flex;
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 2px;
+  border-style: solid;
+  border-color: #41f6d7;
+  background-color: #41f6d7;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  left: 0;
+}
+.brand__block-first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.brand__block-first-title,
+.brand__block-first-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.brand__block-first-buttons {
+  padding-right: 1rem;
+  gap: 1rem;
+}
+.brand__button {
+  width: 168px;
+  height: 40px;
+  border: none;
+  text-align: left;
+  position: relative;
+  background-color: white;
+}
+.brand__button-icon-repair {
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background: #f8f8f8 url('../icon/repair.svg');
+}
+
+.brand__button-icon-checkstatus {
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background: #f8f8f8 url('../icon/checkstatus.svg');
+}
+
+.brand__block-second {
+  display: flex;
+}
+
+.brand__list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  list-style-type: none;
+  padding: 0;
+  white-space: nowrap;
+  column-gap: 2rem;
+  color: #7e7e82;
+}
+.brand__list-item::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Стили для ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand__item-repair-brands {
+  border: #b8ffec;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.brand__block-third {
+  display: flex;
+}
+.read-more::before {
+  position: relative;
+  top: 0.3rem;
+  content: url(../icon/expand.svg);
+}
+
+.read-more {
+  margin: 0;
+  padding-top: 0.25rem;
+  padding-left: 1rem;
+}
+.brand__block-third-text-one,
+.brand__block-third-text-two {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .brand__parttitle {
+    padding-left: 0.875rem;
+  }
+  .brand__block-first-buttons {
+    display: none;
+  }
+  .brand__block-second {
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+  }
+  .brand__block-first {
+    padding-top: 1.5rem;
+  }
+  .image-CPS {
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .brand__block-third {
+    flex-direction: column;
+    column-gap: 5vw;
+  }
+  .brand__block-third-text {
+    padding-left: 1rem;
+  }
+  .brand__block-third-text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    width: 95vw;
+    height: 17vh;
+  }
+}
+@media (min-width: 767px) and (max-width: 1119px) {
+  .brand__block-first-buttons {
+    display: none;
+  }
+  .brand__parttitle {
+    padding-left: 1.5rem;
+  }
+  .brand__block-first {
+    padding-top: 1.5rem;
+  }
+  .brand__block-second {
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+  }
+  .brand__block-third {
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+  }
+  .read-more {
+    padding: 0;
+  }
+  .brand__block-third-text {
+    overflow: hidden;
+    flex-wrap: nowrap;
+    width: 40.57vw;
+    height: 22vh;
+  }
+  .image-CPS {
+    padding-left: 5vw;
+    width: 100%;
+  }
+}
+@media (min-width: 1119px) {
+  .brand__parttitle {
+    padding-left: 2rem;
+  }
+  .brand__block-first {
+    padding-top: 2.625rem;
+  }
+  .brand__list-item {
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    overflow: auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+    column-gap: 3rem;
+  }
+  .brand__block-third {
+    padding-left: 2rem;
+    padding-top: 1.188rem;
+  }
+  .brand__block-third-image {
+    padding-left: 2.25rem;
+  }
+  .read-more {
+    padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper {
+    overflow: scroll;
+  }
+}
