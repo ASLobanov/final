@@ -16,10 +16,7 @@ button:hover {
   opacity: 0.4;
   transition-duration: 2s;
 }
-/* 
-.button-menu--burger {
-  background-image: url(../icon/call.svg);
-}
+
 .button-menu--search {
   background-image: url(../icon/call.svg);
 }
@@ -32,4 +29,3 @@ button:hover {
 .button-menu--profile {
   background-image: url(../icon/profile.svg);
 }
- */
