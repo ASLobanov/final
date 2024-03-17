@@ -52,7 +52,7 @@
     padding-left: 1rem;
     justify-content: space-between;
   }
-  .header {
+  .header_wrapper {
     min-width: 50.57vw;
   }
 }
@@ -73,7 +73,7 @@
 }
 
 @media (min-width: 1119px) {
-  .header {
+  .header__wrapper {
     display: none;
   }
 }

@@ -3,6 +3,8 @@
 @import url(logo.css);
 @import url(brand.css);
 @import url(types.css);
+@import url(menu.css);
+@import url(button-menu.css);
 
 /* Подключаем альтернативную блочную модель */
 html {
@@ -51,4 +53,10 @@ body {
   font-family: 'TT Lakes', sans-serif;
   display: flex;
   flex-direction: column;
+}
+.main {
+  display: flex;
+}
+.wrapper-main {
+  background-color: darkgrey;
 }
