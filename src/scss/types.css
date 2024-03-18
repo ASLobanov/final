@@ -1,6 +1,5 @@
-
 /* Button */
- .types__button--item {
+.types__button--item {
   background-image: url(../icon/button.svg);
   background-color: #fff;
 }
@@ -44,6 +43,7 @@
 
 .swiper {
   width: 251px;
+  height: 200px;
 }
 .swiper-slide {
   display: flex;
@@ -60,10 +60,6 @@
 .swiper-wrapper {
   gap: 0.5rem;
   margin-top: 1rem;
-  /*  
-  display: flex;
-  flex-wrap: nowrap;
-  */
 }
 @media (max-width: 768px) {
   .swiper-wrapper {
