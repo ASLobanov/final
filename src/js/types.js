@@ -1,12 +1,13 @@
 // core version + navigation, pagination modules:
 import Swiper from 'swiper'
+import 'swiper/swiper.scss'
 import { Navigation, Pagination } from 'swiper/modules'
 
 // Get width on browser window
 const width = window.innerWidth
 // Initialize Swiper
 if (width < 766) {
-  var swiper = new Swiper('.types__swiper', {
+  const swiper = new Swiper('.types__swiper', {
     pagination: {
       el: '.swiper-pagination'
     }
