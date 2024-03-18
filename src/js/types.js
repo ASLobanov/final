@@ -1,6 +1,7 @@
 // core version + navigation, pagination modules:
 import Swiper from 'swiper'
 import { Navigation, Pagination } from 'swiper/modules'
+
 // Get width on browser window
 const width = window.innerWidth
 // Initialize Swiper
