@@ -1,3 +1,3 @@
 import '../scss/style.scss'
-import '../js/types'
+import '../js/types.js'
 console.log('Works!')

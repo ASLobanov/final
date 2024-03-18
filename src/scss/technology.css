@@ -1,0 +1,26 @@
+.technology__repair-brands {
+  margin: 1rem 0 0 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: rgba(126, 126, 130, 1);
+  font-weight: 200;
+}
+.technology-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 242px !important;
+  height: 160px;
+  border: solid 1px #eaeaea;
+  border-radius: 0.5rem;
+}
+.technology-slide__text {
+  display: flex;
+  margin: 0;
+  align-self: baseline;
+  padding: 1rem 0 0 1rem;
+}
+.technology__button {
+  margin-left: auto;
+  margin-top: 6rem;
+}
