@@ -45,6 +45,7 @@
   width: 251px;
   height: 200px;
 }
+
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -54,6 +55,7 @@
   border: solid 1px #eaeaea;
   border-radius: 0.5rem;
 }
+
 .swiper-slide > img {
   margin-left: 1rem;
 }

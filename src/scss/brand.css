@@ -139,7 +139,7 @@ a {
   }
   .image-CPS {
     padding-top: 1rem;
-    width: 100vw;
+    width: 100%;
   }
   .brand__block-third {
     flex-direction: column;
@@ -153,7 +153,7 @@ a {
     flex-direction: column;
     overflow: hidden;
     flex-wrap: nowrap;
-    width: 95vw;
+    width: 95%;
     height: 17vh;
   }
   .brand__list-item {

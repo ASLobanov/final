@@ -8,7 +8,8 @@ const width = window.innerWidth
 if (width < 766) {
   const swiper = new Swiper('.types__swiper', {
     pagination: {
-      el: '.swiper-pagination'
+      el: '.swiper-pagination',
+      dynamicBullets: true
     }
   })
 }
