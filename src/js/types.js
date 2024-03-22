@@ -7,9 +7,11 @@ import 'swiper/swiper.scss'
 const width = window.innerWidth
 // Initialize Swiper
 if (width < 766) {
-  const swiper = new Swiper('.types__swiper', {
+  var swiper = new Swiper('.swiper,.types__swiper', {
+    slidesPerView: 11,
+    oneWayMovement: true,
     pagination: {
-      el: '.swiper-pagination'
+      el: '.swiper-pagination,.types__swiper-pagination'
     }
   })
 }

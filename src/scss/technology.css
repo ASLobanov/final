@@ -5,11 +5,11 @@
   color: rgba(126, 126, 130, 1);
   font-weight: 200;
 }
-.technology-slide {
-  display: flex;
+.technology__swiper--slide {
+  display: flex !important;
   justify-content: center;
   align-items: center;
-  width: 242px !important;
+  width: 240px !important;
   height: 160px;
   border: solid 1px #eaeaea;
   border-radius: 0.5rem;
@@ -21,6 +21,13 @@
   padding: 1rem 0 0 1rem;
 }
 .technology__button {
-  margin-left: auto;
-  margin-top: 6rem;
+  margin: 6rem 1rem 1rem auto;
+}
+.technology__swiper {
+  width: 240px;
+  height: 160px;
+}
+.technology__swiper-wrapper {
+  gap: 1rem;
+  margin-top: 1rem;
 }

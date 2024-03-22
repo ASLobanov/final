@@ -1,12 +1,13 @@
 import Swiper from 'swiper/swiper-bundle'
-
+import 'swiper/modules/pagination.scss'
+import 'swiper/swiper.scss'
 // Get width on browser window
 const width = window.innerWidth
 // Initialize Swiper
 if (width < 766) {
-  const swiper = new Swiper('.technology__swiper', {
+  var swiper = new Swiper('.swiper,.technology__swiper', {
     pagination: {
-      el: '.swiper-pagination'
+      el: '.swiper-pagination,.technology__swiper-pagination'
     }
   })
 }
