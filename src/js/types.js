@@ -10,6 +10,8 @@ if (width < 766) {
   var swiper = new Swiper('.swiper,.types__swiper', {
     slidesPerView: 11,
     oneWayMovement: true,
+    observer: true,
+    observeParents: true,
     pagination: {
       el: '.swiper-pagination,.types__swiper-pagination'
     }
@@ -29,8 +31,7 @@ expandButton.addEventListener('click', () => {
     swiperWrapper.classList.remove('expand')
     btn.textContent = 'Показать все'
   } else {
-    expandButton.classList.add('expand')
-    swiperWrapper.classList.add('expand')
+    expandButton.classList.add('expand') / swiperWrapper.classList.add('expand')
     btn.textContent = 'Скрыть'
   }
 })
