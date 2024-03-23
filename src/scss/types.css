@@ -18,7 +18,6 @@
   outline: inherit;
 }
 .expand-button {
-  display: none;
   cursor: pointer;
   background: none;
   color: inherit;

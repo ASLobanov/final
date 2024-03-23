@@ -13,20 +13,24 @@ if (width < 766) {
 }
 
 // // Handle onclick expand buttn
-// const expandButton = document.querySelector('.expand-button')
-// const swiperWrapper = document.querySelector('.swiper-wrapper')
-// const btn = document.querySelector('.expand-button > span')
+const technologyButtonExpand = document.querySelector(
+  '.technology__button-expand'
+)
+const technologyWrapper = document.querySelector('.technology__swiper-wrapper')
+const technologyTextBtn = document.querySelector(
+  '.technology__button-expand > span'
+)
 
-// expandButton.addEventListener('click', () => {
-//   const isExpand = expandButton.classList.contains('expand')
+technologyButtonExpand.addEventListener('click', () => {
+  const Expand = technologyButtonExpand.classList.contains('technology-expand')
 
-//   if (isExpand) {
-//     expandButton.classList.remove('expand')
-//     swiperWrapper.classList.remove('expand')
-//     btn.textContent = 'Показать все'
-//   } else {
-//     expandButton.classList.add('expand')
-//     swiperWrapper.classList.add('expand')
-//     btn.textContent = 'Скрыть'
-//   }
-// })
+  if (Expand) {
+    technologyButtonExpand.classList.remove('technology-expand')
+    technologyWrapper.classList.remove('technology-expand')
+    technologyTextBtn.textContent = 'Показать все'
+  } else {
+    technologyButtonExpand.classList.add('technology-expand')
+    technologyWrapper.classList.add('technology-expand')
+    technologyTextBtn.textContent = 'Скрыть'
+  }
+})
