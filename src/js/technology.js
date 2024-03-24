@@ -1,11 +1,12 @@
+// core version + navigation, pagination modules:
 import Swiper from 'swiper/swiper-bundle'
 import 'swiper/modules/pagination.scss'
 import 'swiper/swiper.scss'
 // Get width on browser window
-const width = window.innerWidth
+const widthTechnology = window.innerWidth
 // Initialize Swiper
-if (width < 766) {
-  var swiper = new Swiper('.swiper,.technology__swiper', {
+if (widthTechnology < 767.999) {
+  var swiperTechnology = new Swiper('.swiper,.technology__swiper', {
     pagination: {
       el: '.swiper-pagination,.technology__swiper-pagination'
     }
@@ -22,9 +23,10 @@ const technologyTextBtn = document.querySelector(
 )
 
 technologyButtonExpand.addEventListener('click', () => {
-  const Expand = technologyButtonExpand.classList.contains('technology-expand')
+  const technologyExpand =
+    technologyButtonExpand.classList.contains('technology-expand')
 
-  if (Expand) {
+  if (technologyExpand) {
     technologyButtonExpand.classList.remove('technology-expand')
     technologyWrapper.classList.remove('technology-expand')
     technologyTextBtn.textContent = 'Показать все'

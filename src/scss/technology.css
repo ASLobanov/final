@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 240px !important;
+  width: 230px !important;
   height: 160px;
   border: solid 1px #eaeaea;
   border-radius: 0.5rem;
@@ -28,6 +28,16 @@
   cursor: pointer;
   outline: inherit;
 }
+.technology__button-wrapper {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+.technology__button-text-expand {
+  margin-left: 1rem;
+}
+.technology__button-expand .technology-expand {
+  transform: rotate(180deg);
+}
 .technology__swiper-wrapper > .technology__swiper--slide {
   display: flex;
 }
@@ -40,45 +50,20 @@
 .technology__button {
   margin: 6rem 1rem 1rem auto;
 }
-
 .technology__swiper {
   width: 250px;
   min-height: 210px;
 }
 .technology__swiper-wrapper {
-  gap: 0.5rem;
+  gap: 1.22rem;
   margin-top: 1rem;
 }
-@media (min-width: 768px) and (max-width: 1119.99px) {
+@media (min-width: 768px) and (max-width: 1449.99px) {
   .technology__swiper {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1rem;
-  }
-  .technology__swiper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: flex-start;
-  }
-
-  .technology__swiper div:nth-child(n + 3) {
-    display: none;
-  }
-
-  .technology-expand div:nth-child(n + 3) {
-    display: flex;
-  }
-}
-
-@media (min-width: 1119px) {
-  .technology__swiper {
-    width: 100%;
-    height: 100%;
-    display: flex;
+    justify-self: start;
     justify-content: center;
     align-items: center;
     margin-left: 1rem;
@@ -86,10 +71,21 @@
   .technology__swiper-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    column-gap: 1rem;
+    max-width: 100%;
     justify-content: flex-start;
+    row-gap: 1.5rem;
+  }
+
+  .technology__swiper div:nth-child(n + 4) {
+    display: none;
+  }
+
+  .technology-expand div:nth-child(n + 4) {
+    display: flex;
   }
 }
+
 @media (min-width: 1449.99px) {
   .technology__swiper {
     width: 100%;
@@ -102,7 +98,8 @@
   .technology__swiper-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    row-gap: 1.5rem;
+    column-gap: 2rem;
     justify-content: flex-start;
   }
   .technology__swiper div:nth-child(n + 5) {
@@ -112,15 +109,8 @@
     display: flex;
   }
 }
-.technology__button-wrapper {
-  margin-top: 0.5rem;
-  margin-left: 1rem;
-}
-
-.technology__button-text-expand {
-  margin-left: 1rem;
-}
-
-.technology__button-expand .technology-expand:before {
-  transform: rotate(180deg);
+@media (max-width: 767px) {
+  .technology__button-wrapper {
+    display: none;
+  }
 }

@@ -1,37 +1,41 @@
 // core version + navigation, pagination modules:
-import Swiper from 'swiper'
+import Swiper from 'swiper/swiper-bundle'
 import 'swiper/modules/pagination.scss'
 import 'swiper/swiper.scss'
-//import { Navigation, Pagination } from 'swiper/modules'
+
 // Get width on browser window
-const width = window.innerWidth
+const widthTypes = window.innerWidth
 // Initialize Swiper
-if (width < 766) {
-  var swiper = new Swiper('.swiper,.types__swiper', {
+if (widthTypes < 767.9999) {
+  var swiperTypes = new Swiper('.swiper,.types__swiper', {
     slidesPerView: 11,
     oneWayMovement: true,
     observer: true,
     observeParents: true,
+    setWrapperSize: true,
     pagination: {
       el: '.swiper-pagination,.types__swiper-pagination'
     }
   })
 }
 
-// Handle onclick expand buttn
-export const expandButton = document.querySelector('.expand-button')
-export const swiperWrapper = document.querySelector('.swiper-wrapper')
-export const btn = document.querySelector('.expand-button > span')
+// Handle onclick expand button
+export const typesExpandButton = document.querySelector('.types__button-expand')
+export const typesWrapper = document.querySelector('.types__wrapper')
+export const typesTextBtn = document.querySelector(
+  '.types__button-expand > span'
+)
 
-expandButton.addEventListener('click', () => {
-  const isExpand = expandButton.classList.contains('expand')
+typesExpandButton.addEventListener('click', () => {
+  const typesExpand = typesExpandButton.classList.contains('types-expand')
 
-  if (isExpand) {
-    expandButton.classList.remove('expand')
-    swiperWrapper.classList.remove('expand')
-    btn.textContent = 'Показать все'
+  if (typesExpand) {
+    typesExpandButton.classList.remove('types-expand')
+    typesWrapper.classList.remove('types-expand')
+    typesTextBtn.textContent = 'Показать все'
   } else {
-    expandButton.classList.add('expand') / swiperWrapper.classList.add('expand')
-    btn.textContent = 'Скрыть'
+    typesExpandButton.classList.add('types-expand') /
+      typesWrapper.classList.add('types-expand')
+    typesTextBtn.textContent = 'Скрыть'
   }
 })
