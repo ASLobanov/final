@@ -1,11 +1,17 @@
+.technology {
+  border-top: 1px solid rgba(217, 255, 245, 1);
+  border-bottom: 1px solid rgba(217, 255, 245, 1);
+}
 .technology__repair-brands {
-  margin: 1rem 0 0 1rem;
+  margin: 1rem 0 0 1.5rem;
   font-size: 1.2rem;
   line-height: 1.5rem;
   color: rgba(126, 126, 130, 1);
   font-weight: 200;
+  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
 }
 .technology__swiper--slide {
+  margin-left: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;

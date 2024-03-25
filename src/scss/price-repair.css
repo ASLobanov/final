@@ -3,15 +3,20 @@
   display: flex;
   flex-direction: column;
 }
+.price-repair {
+  border-top: 1px solid rgba(217, 255, 245, 1);
+  border-bottom: 1px solid rgba(217, 255, 245, 1);
+}
 .price-repair__title {
   margin: 1rem 0 0 1rem;
   font-size: 1.2rem;
   line-height: 1.5rem;
   color: rgba(126, 126, 130, 1);
   font-weight: 200;
+  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
 }
 .price-repair__title-table {
-  width: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 45% 15% 20% 20%;
   margin-top: 3%;
@@ -25,6 +30,10 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+.price-repair__wrapper,
+.price-repair__comment {
+  padding-left: 1rem;
 }
 
 .price-repair__swiper-slide--button {
@@ -50,14 +59,6 @@
     display: none;
   }
 }
-.price-repair__swiper .price-repair__wrapper {
-  width: 100%;
-}
-.price-repair__wrapper .price-repair__swiper {
-  width: 1018px;
-  display: flex;
-  flex-direction: column;
-}
 
 .price-repair__wrapper .price-repair__swiper-slide {
   display: flex;
@@ -65,10 +66,6 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
-.price-repair__swiper__pagination {
-}
-.price-repair__comment {
-}
 .price-repair__comment-text {
   margin-top: 1rem;
   font-size: 1rem;
@@ -86,7 +83,7 @@
   }
 
   .price-repair__swiper {
-    width: 230px;
+    width: 250px;
     min-height: 240px;
     display: flex;
     justify-content: center;
@@ -104,6 +101,7 @@
     max-width: 26.313rem;
     max-height: 3.75rem;
   }
+
   .price-repair__swiper {
     height: 100%;
     display: flex;
@@ -112,12 +110,13 @@
     border-radius: 0.5rem;
   }
   .price-repair__wrapper {
+    width: 1020px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
   .price-repair__wrapper .price-repair__swiper-slide {
-    width: 100%;
+    width: 98%;
     height: 50px;
     display: grid;
     align-content: center;
@@ -133,7 +132,7 @@
     max-height: 3.75rem;
   }
   .price-repair__wrapper .price-repair__swiper-slide {
-    width: 1020px;
+    max-width: 1020px;
     height: 50px;
     display: grid;
     align-content: center;
@@ -153,6 +152,9 @@
   .price-repair__wrapper {
     display: flex;
     flex-direction: column;
+  }
+  .price-repair__title-table {
+    max-width: 90%;
   }
 }
 .price-repair__button-offer {

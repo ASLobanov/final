@@ -20,6 +20,7 @@
 
 .menu {
   min-width: 276px;
+  margin: 1rem;
 }
 .menu__header {
   display: flex;
