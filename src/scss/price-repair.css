@@ -23,6 +23,10 @@
   margin-bottom: 3%;
 }
 
+.price-repair__wrapper {
+  border-radius: 0.5rem;
+}
+
 .price-repair__swiper-slide > button {
   cursor: pointer;
   border: none;
@@ -31,7 +35,7 @@
   cursor: pointer;
   outline: inherit;
 }
-.price-repair__wrapper,
+
 .price-repair__comment {
   padding-left: 1rem;
 }
@@ -83,7 +87,7 @@
   }
 
   .price-repair__swiper {
-    width: 250px;
+    max-width: 260px;
     min-height: 240px;
     display: flex;
     justify-content: center;
@@ -94,6 +98,9 @@
   }
   .price-repair__swiper-slide--button {
     transform: translate(110px, -23px);
+  }
+  .price-repair__swiper__pagination {
+    padding-top: 10vw;
   }
 }
 @media (min-width: 767.99999px) and (max-width: 1449.99px) {
@@ -110,13 +117,14 @@
     border-radius: 0.5rem;
   }
   .price-repair__wrapper {
-    width: 1020px;
+    width: 1050px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-left: 1rem;
   }
   .price-repair__wrapper .price-repair__swiper-slide {
-    width: 98%;
+    width: 96%;
     height: 50px;
     display: grid;
     align-content: center;
@@ -132,7 +140,7 @@
     max-height: 3.75rem;
   }
   .price-repair__wrapper .price-repair__swiper-slide {
-    max-width: 1020px;
+    max-width: 1070px;
     height: 50px;
     display: grid;
     align-content: center;
@@ -144,7 +152,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.5rem;
   }
   .price-repair__wrapper .price-repair__swiper-slide:not(:first-child) {
     border-top: 1px solid rgba(234, 234, 234, 1);
@@ -152,9 +159,10 @@
   .price-repair__wrapper {
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
   }
   .price-repair__title-table {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 .price-repair__button-offer {
@@ -171,6 +179,11 @@
   font-size: 1rem;
   line-height: 1.5rem;
   text-wrap: nowrap;
+}
+.price-repair__button-offer-icon {
+  content: url(../icon/price-repair__button-offer-icon.svg);
+  vertical-align: middle;
+  margin-left: 0.5rem;
 }
 .price-repair__swiper-slide-label {
   color: rgba(126, 126, 130, 1);
