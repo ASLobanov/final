@@ -48,7 +48,7 @@
   border: none;
   text-align: left;
   position: relative;
-  background-color: white;
+  background-color: rgba(248, 248, 248, 1);
 }
 .brand__button-icon-repair {
   width: 40px;
@@ -65,7 +65,7 @@
   right: 0;
   top: 0;
   position: absolute;
-  background: #f8f8f8 url('../icon/checkstatus.svg');
+  background: rgba(248, 248, 248, 1) url('../icon/checkstatus.svg');
 }
 
 .brand__block-second {
