@@ -179,6 +179,7 @@
   font-size: 1rem;
   line-height: 1.5rem;
   text-wrap: nowrap;
+  padding-bottom: 2rem;
 }
 .price-repair__button-offer-icon {
   content: url(../icon/price-repair__button-offer-icon.svg);
@@ -196,6 +197,8 @@
   font-size: 0.9rem;
   line-height: 1.2rem;
   font-weight: 300;
+  display: flex;
+  max-height: 100%;
 }
 .price-repair__title-table,
 .price-repair__swiper-slide > span {
