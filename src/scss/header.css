@@ -85,3 +85,27 @@
     content: url(../icon/burger-close-icon.svg);
   }
 }
+@media (min-width: 768px) and (max-width: 1118.999px) {
+  .header__nav.open-menu {
+    visibility: visible;
+    display: flex;
+    width: 320px;
+    flex-direction: row;
+    position: fixed;
+    z-index: 3;
+    justify-content: space-around;
+    padding-left: 0;
+  }
+  .header__divider-two.open-menu {
+    display: none;
+  }
+  .button-repair.open-menu {
+    display: none;
+  }
+  .header__group-second-one.open-menu {
+    display: none;
+  }
+  .button-header--burger.open-menu {
+    content: url(../icon/burger-close-icon.svg);
+  }
+}

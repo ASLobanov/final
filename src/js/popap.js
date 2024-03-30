@@ -7,6 +7,7 @@ const footer = document.querySelector('.footer')
 const headerNav = document.querySelector('.header__nav')
 const divider = document.querySelector('.header__divider-two')
 const repairButton = document.querySelector('.button-repair')
+const buttonHeader = document.querySelector('.header__group-second-one')
 //console.log('buttonPopapMenu')
 
 buttonPopapMenu.addEventListener('click', () => {
@@ -22,6 +23,7 @@ buttonPopapMenu.addEventListener('click', () => {
     headerNav.classList.remove('open-menu')
     divider.classList.remove('open-menu')
     repairButton.classList.remove('open-menu')
+    buttonHeader.classList.remove('open-menu')
   } else {
     asideMenu.classList.add('open-menu')
     menuHeader.classList.add('open-menu')
@@ -32,5 +34,6 @@ buttonPopapMenu.addEventListener('click', () => {
     divider.classList.add('open-menu')
     repairButton.classList.add('open-menu')
     buttonPopapMenu.classList.add('open-menu')
+    buttonHeader.classList.add('open-menu')
   }
 })
