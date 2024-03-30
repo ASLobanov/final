@@ -9,20 +9,37 @@
     left: 0;
     padding: 0;
     margin: 0;
-    z-index: 99999;
+    z-index: 2;
     background-color: rgba(255, 255, 255, 1);
+    transition: all 0.3s;
+    animation: menu 1s ease;
+  }
+
+  @keyframes menu {
+    5% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   .menu__contact.open-menu {
     padding-top: 1rem !important;
   }
   .footer.open-menu {
-    visibility: hidden;
+    display: none;
   }
   .wrapper-main.open-menu {
-    visibility: hidden;
+    display: none;
   }
   .menu__header.open-menu {
     padding-top: 1.5rem !important;
+  }
+  .menu__header.open-menu {
+    visibility: hidden;
   }
 }
 
@@ -54,7 +71,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 2.625rem;
+  padding-top: 1.5rem;
 }
 
 .menu__nav-item {
