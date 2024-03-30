@@ -1,3 +1,31 @@
+@media (max-width: 767.999px) {
+  .menu.open-menu {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 676px;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 99999;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .menu__contact.open-menu {
+    padding-top: 1rem !important;
+  }
+  .footer.open-menu {
+    visibility: hidden;
+  }
+  .wrapper-main.open-menu {
+    visibility: hidden;
+  }
+  .menu__header.open-menu {
+    padding-top: 1.5rem !important;
+  }
+}
+
 @media (min-width: 1119px) {
   .menu {
     display: block;
@@ -29,13 +57,6 @@
   padding-top: 2.625rem;
 }
 
-.menu__header-button {
-}
-
-.menu__nav {
-}
-.menu__nav-list {
-}
 .menu__nav-item {
   display: flex;
   flex-direction: column;
