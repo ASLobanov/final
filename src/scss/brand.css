@@ -3,7 +3,15 @@
   flex-direction: column;
   background-color: #f8f8f8;
 }
-
+.brand__block-third-read-more > button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
 .brand__parttitle {
   display: flex;
   white-space: nowrap;
@@ -106,7 +114,7 @@ a {
 .brand__block-third {
   display: flex;
 }
-.read-more::before {
+.brand__block-third-button::before {
   position: relative;
   top: 0.3rem;
   content: url(../icon/expand.svg);
@@ -149,12 +157,10 @@ a {
     padding-left: 1rem;
   }
   .brand__block-third-text {
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
     flex-wrap: nowrap;
-    width: 95%;
-    height: 17vh;
+    width: 90.57vw;
+    height: 22vh;
   }
   .brand__list-item {
     width: 100vw;
@@ -178,9 +184,7 @@ a {
     padding-left: 1.5rem;
     padding-top: 2rem;
   }
-  .read-more {
-    padding: 0;
-  }
+
   .brand__block-third-text {
     overflow: hidden;
     flex-wrap: nowrap;
@@ -214,8 +218,15 @@ a {
   .brand__block-third-image {
     padding-left: 2.25rem;
   }
-  .read-more {
-    padding: 0;
+
+  .brand__block-third-one {
+    min-height: 300px;
+    max-width: 600px;
+  }
+  .brand__block-third-text {
+    overflow: hidden;
+    width: 90%;
+    height: 60%;
   }
 }
 
@@ -223,4 +234,8 @@ a {
   .wrapper {
     overflow: scroll;
   }
+}
+
+.brand__block-third-text.read-more {
+  overflow: auto;
 }
