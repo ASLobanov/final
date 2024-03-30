@@ -99,6 +99,9 @@
   .header__divider-two.open-menu {
     display: none;
   }
+  .header__divider-one.open-menu {
+    display: none;
+  }
   .button-repair.open-menu {
     display: none;
   }
