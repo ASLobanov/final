@@ -1,0 +1,30 @@
+.feedback {
+}
+.feedback__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 676px;
+}
+
+/* Button */
+.feedback__button > button {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.feedback__button-form > span {
+  content: url('../icon/price-repair-icon.svg');
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+.feedback__button-form {
+  display: flex;
+  align-items: center;
+  max-width: 136px;
+  max-height: 32px;
+  border-radius: 10px;
+  background-color: rgba(255, 62, 121, 1);
+  color: white;
+}
