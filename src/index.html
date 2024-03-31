@@ -155,38 +155,34 @@
                  </section>
                  <!-- Section form -->
                  <section class="feedback">
-                  <h2>Обратная связь</h2>
-                  <fieldset class="feedback__wrapper">
-                    <p>
-                      <label for="name" > 
-                        <strong><abbr title="required"></abbr></strong>
-                      </label>
-                      <input type="text" id="name" name="username" placeholder="Имя" />
-                    </p>
-                    <p>
-                      <label for="number" > 
-                        <strong><abbr title="required"></abbr></strong>
-                      </label>
-                      <input type="number" id="number" name="number" placeholder="Телефон" />
-                    </p>
-                    <p>
-                      <label for="mail">
-                       <strong><abbr title="required"></abbr></strong>
-                      </label>
-                      <input type="email" id="mail" name="usermail"placeholder="Электронная почта" />
-                    </p>
-                    <p>
-                      <label for="text">
-                        <strong><abbr title="required"></abbr></strong>
-                      </label>
-                      <input type="text" id="text" name="text"placeholder="Сообщение" />
-                    </p>
-                    <div class="feedback__button">
-                      <button class="feedback__button-form" type="submit"  value="Save">Отправить
-                        <span class="feedback__button-form-decor"></span>
-                      </button>
-                    </div>
-                  </fieldset>
+                  <div class="feedback__wrapper">
+                    <form action="#"  id="form" class="feedback__form"> 
+                      <h2 class="feedback__title">Обратная связь</h2>
+                      <div class="feedback__form-item">
+                        <label for="name" class="feedback__label"></label>   
+                        <input type="text" id="name" name="username" class="feedback__input" placeholder="Имя" />
+                      </div>
+                      <div class="feedback__form-item">
+                        <label for="number" class="feedback__label"> </label>
+                        <input type="number" id="number" name="number" class="feedback__input" placeholder="Телефон" />
+                      </div>
+                      <div class="feedback__form-item">
+                        <label for="mail" class="feedback__label"></label>
+                        <input type="email" id="mail" name="usermail" class="feedback__input" placeholder="Электронная почта" />
+                      </div>
+                      <div class="feedback__form-item">
+                        <label for="message" class="feedback__label"></label>
+                        <textarea name="text" id="message" class="feedback__input" placeholder="Сообщение"></textarea >
+                      </div>
+                      <div class="feedback__processing"><span class="feedback__processing-text">Нажимая “отправить”, вы даете согласие на 
+                        обработку персональных данных и соглашаетесь с нашей политикой конфиденциальности</span></div>
+                      <div class="feedback__button">
+                        <button class="feedback__button-form" type="submit"  value="Save">Отправить
+                          <span class="feedback__button-form-decor"></span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </section>
                   <!-- Section #2 -->
                   <section class="types">

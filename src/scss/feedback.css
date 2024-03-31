@@ -1,10 +1,16 @@
 .feedback {
+  display: none;
+  flex-direction: column;
+  width: 440px;
+  min-height: 676px;
 }
 .feedback__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  height: 676px;
+}
+.feedback__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0;
+  padding: 0 0 0 1rem;
 }
 
 /* Button */
@@ -27,4 +33,33 @@
   border-radius: 10px;
   background-color: rgba(255, 62, 121, 1);
   color: white;
+  margin: 23px 32px 0 272px;
+}
+
+/* text */
+.feedback__processing {
+  margin: 1rem 0 0 1rem;
+}
+.feedback__processing-text {
+  font-size: 0.9rem;
+  color: rgba(126, 126, 130, 1);
+}
+
+/* Form */
+.feedback__form {
+}
+.feedback__form-item {
+}
+.feedback__label {
+  font-size: 1rem;
+  display: block;
+  margin-top: 1rem;
+}
+.feedback__input {
+  display: block;
+  min-width: 376px;
+  height: 48px;
+  border-radius: 5px;
+  margin: 0 0 0 1rem;
+  padding-left: 1rem;
 }
