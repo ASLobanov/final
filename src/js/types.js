@@ -34,8 +34,8 @@ typesExpandButton.addEventListener('click', () => {
     typesWrapper.classList.remove('types-expand')
     typesTextBtn.textContent = 'Показать все'
   } else {
-    typesExpandButton.classList.add('types-expand') /
-      typesWrapper.classList.add('types-expand')
+    typesExpandButton.classList.add('types-expand')
+    typesWrapper.classList.add('types-expand')
     typesTextBtn.textContent = 'Скрыть'
   }
 })

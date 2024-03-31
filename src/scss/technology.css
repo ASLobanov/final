@@ -34,6 +34,9 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .technology__button-wrapper {
   margin-top: 0.5rem;
