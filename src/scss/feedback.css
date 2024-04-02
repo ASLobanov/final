@@ -63,3 +63,14 @@
   margin: 0 0 0 1rem;
   padding-left: 1rem;
 }
+
+.feedback.feedback-open {
+  display: block;
+  position: relative;
+  top: 1rem;
+  left: 117rem;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  z-index: 9999;
+}
