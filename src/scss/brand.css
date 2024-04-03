@@ -212,7 +212,7 @@ a {
   .brand__block-third-text {
     overflow: hidden;
     width: 90%;
-    max-height: 90%;
+
     display: -webkit-box;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
@@ -221,7 +221,7 @@ a {
   .brand__block-third-text.text-read-more {
     display: flex;
     flex-direction: column;
-    height: 100%;
+
     overflow: visible;
   }
   .brand__block-third-read-more {
@@ -265,7 +265,7 @@ a {
   .brand__block-third-text {
     overflow: hidden;
     width: 90%;
-    max-height: 90%;
+
     display: -webkit-box;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
@@ -274,7 +274,7 @@ a {
   .brand__block-third-text.text-read-more {
     display: flex;
     flex-direction: column;
-    height: 100%;
+
     overflow: visible;
   }
 }

@@ -28,7 +28,7 @@
             </div>
             <div class="header__group-second-two">
               <div class="header__divider-two"></div>
-              <button class="button-header button-repair  button-header--repair"></button>
+              <button class="button-header  button-repair button-header--repair"></button>
               <button class="button-header button-header--checkstatus"></button>
             </div>
         </nav>
@@ -72,7 +72,7 @@
           <div class="menu__contact">
             <div class="menu__contact-button">
               <button class="button-menu button-menu--call"></button>
-              <button class="button-menu button-menu--chat"></button>
+              <button class="button-menu button-menu-feedback button-menu--chat"></button>
               <button class="button-menu button-menu--profile"></button>
             </div>
             <div class="menu__contact-email">
@@ -97,6 +97,36 @@
             </ul>
           </div>
          </div>
+          <!-- form -->
+        <form action="#"  id="form" class="feedback">
+          <div class="feedback__button-close">
+            <button class="feedback__button-close-active feedback__button-close-active--style "></button>
+          </div>
+          <h2 class="feedback__title">Обратная связь</h2>
+          <div class="feedback__item">
+            <label for="name" class="feedback__label"></label>   
+            <input type="text" id="name" name="username" class="feedback__input" placeholder="Имя" />
+          </div>
+          <div class="feedback__item">
+            <label for="number" class="feedback__label"> </label>
+            <input type="number" id="number" name="number" class="feedback__input" placeholder="Телефон" />
+          </div>
+          <div class = "feedback__item">
+            <label for="mail" class="feedback__label"></label>
+            <input type="email" id="mail" name="usermail" class="feedback__input" placeholder="Электронная почта" />
+          </div>
+          <div class = "feedback__item">
+            <label for="message" class="feedback__label"></label>
+            <textarea name="text" id="message" class="feedback__input" placeholder="Сообщение"></textarea >
+          </div>
+          <div class="feedback__processing"><span class="feedback__processing-text">Нажимая “отправить”, вы даете согласие на 
+            обработку персональных данных и соглашаетесь с нашей политикой конфиденциальности</span></div>
+          <div class="feedback__button-submit">
+            <button class="feedback__button-form" type="submit"  value="Save">Отправить
+              <span class="feedback__button-form-decor"></span>
+            </button>
+          </div>
+    </form>
         </aside>
         <!-- Section #1 -->
         <div class="wrapper-main">
@@ -105,7 +135,7 @@
                     <h1 class="brand__parttitle">Услуги и сервисы</h1>
                   </div>
                   <div class="brand__block-first-buttons">
-                    <button class="brand__button brand__button-application brand__button--repair">
+                    <button class="brand__button  brand__button--repair">
                       <span class="brand__button-icon-repair"></span>
                       Оставить заявку
                     </button>
@@ -384,37 +414,6 @@
             </article>
            </section> 
            </div>
-           <!-- Section form -->
-          <section class="feedback">
-            <div class="feedback__wrapper">
-              <form action="#"  id="form" class="feedback__form"> 
-                <h2 class="feedback__title">Обратная связь</h2>
-                <div class="feedback__form-item">
-                  <label for="name" class="feedback__label"></label>   
-                  <input type="text" id="name" name="username" class="feedback__input" placeholder="Имя" />
-                </div>
-                <div class="feedback__form-item">
-                  <label for="number" class="feedback__label"> </label>
-                  <input type="number" id="number" name="number" class="feedback__input" placeholder="Телефон" />
-                </div>
-                <div class="feedback__form-item">
-                  <label for="mail" class="feedback__label"></label>
-                  <input type="email" id="mail" name="usermail" class="feedback__input" placeholder="Электронная почта" />
-                </div>
-                <div class="feedback__form-item">
-                  <label for="message" class="feedback__label"></label>
-                  <textarea name="text" id="message" class="feedback__input" placeholder="Сообщение"></textarea >
-                </div>
-                <div class="feedback__processing"><span class="feedback__processing-text">Нажимая “отправить”, вы даете согласие на 
-                  обработку персональных данных и соглашаетесь с нашей политикой конфиденциальности</span></div>
-                <div class="feedback__button">
-                  <button class="feedback__button-form" type="submit"  value="Save">Отправить
-                    <span class="feedback__button-form-decor"></span>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </section>
         </main>
         <footer class="footer">
           <div class="footer__wrapper">

@@ -1,7 +1,12 @@
-const applicationPopap = document.querySelector('.brand__button-application')
+const applicationPopap = document.querySelector('.button-menu-feedback')
 const openApplicationPopap = document.querySelector('.feedback')
+const closeButtonPopup = document.querySelector(
+  '.feedback__button-close-active'
+)
 
 applicationPopap.addEventListener('click', () => {
-  applicationPopap.classList.toggle('open')
-  openApplicationPopap.classList.toggle('feedback-open')
+  openApplicationPopap.classList.add('feedback-open')
+})
+closeButtonPopup.addEventListener('click', () => {
+  openApplicationPopap.classList.remove('feedback-open')
 })
