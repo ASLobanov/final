@@ -1,10 +1,11 @@
+.feedback__wrapper {
+}
 .feedback {
-  display: block;
-  visibility: hidden;
-  position: absolute;
+  display: none;
+  position: fixed;
   flex-direction: column;
   width: 440px;
-  min-height: 676px;
+  height: 676px;
 }
 
 .feedback__title {
@@ -100,14 +101,29 @@
   padding-left: 1rem;
 }
 
-.feedback.feedback-open {
-  display: block;
-  visibility: visible;
-  position: fixed;
-  top: 1rem;
-  left: 117rem;
-  padding: 0;
-  margin: 0;
-  background-color: white;
-  z-index: 9999;
+@media (min-width: 1440px) {
+  .feedback.feedback-open {
+    display: flex;
+    width: 440px;
+    max-height: 940px;
+    position: relative;
+    bottom: 100rem;
+    left: 61.7rem;
+    margin: 0;
+    background-color: white;
+    z-index: 2;
+  }
+}
+
+.main.feedback-open {
+  opacity: 0.1;
+}
+.footer.feedback-open {
+  opacity: 0.1;
+}
+.wrapper.feedback-open {
+  display: flex;
+  width: 1440px;
+  min-height: 940px;
+  overflow: hidden;
 }
