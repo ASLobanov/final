@@ -1,38 +1,33 @@
-.feedback__wrapper {
+.call__modal {
 }
-/*
-.feedback {
-  display: none;
-  position: fixed;
-  flex-direction: column;
-  width: 440px;
-  min-height: 940px;
+.call__modal-inner {
 }
-
-.feedback__title {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  margin: 0;
-  padding: 0 0 0 1rem;
+.call__form {
 }
-*/
-
-/*
-.feedback__modal {
-  border: none;
-  padding: 0;
+.call__button-close {
 }
-.feedback__modal-inner {
-  width: 440px;
-  height: 940px;
-  border: 1px solid;
-  padding: 0 0 0 5rem;
-}
-*/
-.feedback__processing-text--style {
+.call__processing-text--style {
   color: rgba(255, 62, 121, 1);
 }
-.feedback__title::before {
+.call__button-close-active {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(126, 126, 130, 0);
+}
+.call__button-close-active--style {
+  background-image: url(../icon/close-icon.svg);
+}
+.call__title {
+}
+.call__title::before {
   content: '';
   height: 32px;
   width: 1px;
@@ -46,24 +41,34 @@
   transform: translate(-1rem);
   -webkit-transform: translate(-1rem);
 }
-
-/* Button */
-.feedback__button-submit > button {
+.call__item {
+}
+.call__label {
+  font-size: 1rem;
+  display: block;
+  margin-top: 1rem;
+}
+.call__input {
+}
+.call__processing {
+  max-width: 376px;
+  margin: 1rem 0 0 1rem;
+}
+.call__processing-text {
+  font-size: 0.9rem;
+  color: rgba(126, 126, 130, 1);
+}
+.call__button-submit {
+  max-width: 136px;
+  max-height: 32px;
+}
+.call__button-submit > button {
   border: none;
   font: inherit;
   cursor: pointer;
   outline: inherit;
 }
-.feedback__button-submit {
-  max-width: 136px;
-  max-height: 32px;
-}
-.feedback__button-form > span {
-  content: url('../icon/price-repair-icon.svg');
-  vertical-align: middle;
-  margin-left: 1rem;
-}
-.feedback__button-form {
+.call__button-form {
   display: flex;
   align-items: center;
   max-width: 136px;
@@ -73,79 +78,20 @@
   color: white;
   margin: 23px 32px 0 272px;
 }
-.feedback__button-close {
-  position: relative;
-  top: 3.5rem;
-  right: 5rem;
+.call__button-form > span {
+  content: url('../icon/price-repair-icon.svg');
+  vertical-align: middle;
+  margin-left: 1rem;
 }
-.feedback__button-close-active {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(126, 126, 130, 0);
-}
-.feedback__button-close-active--style {
-  background-image: url(../icon/close-icon.svg);
+.call__button-form-decor {
 }
 
-/* text */
-.feedback__processing {
-  max-width: 376px;
-  margin: 1rem 0 0 1rem;
-}
-.feedback__processing-text {
-  font-size: 0.9rem;
-  color: rgba(126, 126, 130, 1);
-}
-
-/* Form */
-.feedback__form {
-}
-.feedback__form-item {
-}
-.feedback__label {
-  font-size: 1rem;
-  display: block;
-  margin-top: 1rem;
-}
-/*
-.feedback__input {
-  display: block;
-  min-width: 376px;
-  height: 48px;
-  border-radius: 5px;
-  margin: 0 0 0 1rem;
-  padding-left: 1rem;
-}
-
-.feedback__modal {
-  position: relative;
-  bottom: 99.9rem;
-  left: 28.7rem;
-  user-select: text;
-  visibility: hidden;
-  display: none;
-}
-*/
-
-/*
-@media (min-width: 1140px)
-*/
-textarea.feedback__input {
-  min-height: 118px;
-  resize: vertical;
-}
-.feedback__modal {
-}
 @media (max-width: 767.999px) {
-  .feedback__modal[open] {
+  .wrapper.call__lock {
+    overflow: hidden;
+    height: 1024px;
+  }
+  .call__modal[open] {
     max-width: 310px;
     min-height: 676px;
     padding: 0;
@@ -154,39 +100,39 @@ textarea.feedback__input {
     position: fixed;
     inset-block-start: -33rem;
   }
-  .feedback__modal::backdrop {
+  .call__modal::backdrop {
     opacity: 1;
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   }
-
-  .feedback__button-close {
+  .call__button-close {
     position: relative;
     top: 0.5rem;
     left: 0rem;
     margin-bottom: 2.5rem;
   }
-  .feedback__modal-inner {
+  .call__modal-inner {
     max-width: 304px;
     max-height: 676px;
     padding: 1rem;
   }
-  .feedback__input {
+  .call__input {
     min-width: 269px;
     height: 48px;
     margin-right: 1rem;
   }
-  .feedback__button-form {
+  .call__button-form {
     margin: 23px 32px 0 160px;
   }
+  .call__title::before {
+    right: 1.4rem;
+  }
 }
-
 @media (min-width: 768px) and (max-width: 1118.999px) {
-  .wrapper.feedback__lock {
+  .wrapper.call__lock {
     overflow: hidden;
     height: 1024px;
   }
-  .feedback__modal[open] {
+  .call__modal[open] {
     min-width: 440px;
     min-height: 1045px;
     padding: 0;
@@ -199,45 +145,42 @@ textarea.feedback__input {
     flex-direction: column;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
   }
-
-  .feedback__modal::backdrop {
+  .call__modal::backdrop {
     opacity: 0.9;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   }
-
-  .feedback__button-close {
+  .call__button-close {
     position: relative;
     top: 1rem;
     left: 0rem;
     margin-bottom: 2.5rem;
   }
-  .feedback__modal-inner {
+  .call__modal-inner {
     max-width: 440px;
     max-height: 1024px;
     padding: 1rem;
     display: flex;
     justify-content: center;
   }
-  .feedback__input {
+  .call__input {
     min-width: 376px;
     height: 48px;
     margin-right: 1rem;
   }
-  .feedback__button-form {
+  .call__button-form {
     margin: 23px 32px 0 260px;
   }
-  .feedback__title::before {
+  .call__title::before {
     right: 1.4rem;
   }
 }
-
 @media (min-width: 1120px) {
-  .wrapper.feedback__lock {
+  .wrapper.call__lock {
     overflow: hidden;
     height: 1045px;
   }
-  .feedback__modal[open] {
+  .call__modal[open] {
     min-width: 440px;
     min-height: 1045px;
     padding: 0;
@@ -250,45 +193,42 @@ textarea.feedback__input {
     flex-direction: column;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
   }
-
-  .feedback__modal::backdrop {
+  .call__modal::backdrop {
     opacity: 0.9;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   }
-
-  .feedback__button-close {
+  .call__button-close {
     position: relative;
     top: 1rem;
     left: 0rem;
     margin-bottom: 2.5rem;
   }
-  .feedback__modal-inner {
+  .call__modal-inner {
     max-width: 440px;
     max-height: 1024px;
     padding: 1rem;
     display: flex;
     justify-content: center;
   }
-  .feedback__input {
+  .call__input {
     min-width: 376px;
     height: 48px;
     margin-right: 1rem;
   }
-  .feedback__button-form {
+  .call__button-form {
     margin: 23px 32px 0 260px;
   }
-  .feedback__title::before {
+  .call__title::before {
     right: 1.4rem;
   }
 }
-
 @media (min-width: 1440px) {
-  .wrapper.feedback__lock {
+  .call.feedback__lock {
     overflow: hidden;
     height: 1045px;
   }
-  .feedback__modal[open] {
+  .call__modal[open] {
     min-width: 440px;
     min-height: 1045px;
     padding: 0;
@@ -303,56 +243,34 @@ textarea.feedback__input {
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
   }
 
-  .feedback__modal::backdrop {
+  .call__modal::backdrop {
     opacity: 0.9;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   }
 
-  .feedback__button-close {
+  .call__button-close {
     position: relative;
     top: 1rem;
     left: 0rem;
     margin-bottom: 2.5rem;
   }
-  .feedback__modal-inner {
+  .call__modal-inner {
     max-width: 440px;
     max-height: 1024px;
     padding: 1rem;
     display: flex;
     justify-content: center;
   }
-  .feedback__input {
+  .call__input {
     min-width: 376px;
     height: 48px;
     margin-right: 1rem;
   }
-  .feedback__button-form {
+  .call__button-form {
     margin: 23px 32px 0 260px;
   }
-  .feedback__title::before {
+  .call__title::before {
     right: 1.4rem;
   }
 }
-
-/*
-.feedback__modal::backdrop {
-  opacity: 0.9;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-}
-*/
-/*
-.main.feedback-open {
-  opacity: 0.1;
-}
-.footer.feedback-open {
-  opacity: 0.1;
-}
-.wrapper.feedback-open {
-  display: flex;
-  width: 1440px;
-  height: 940px;
-  overflow: hidden;
-}
-*/

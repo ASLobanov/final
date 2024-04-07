@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -71,7 +71,7 @@
           </nav>
           <div class="menu__contact">
             <div class="menu__contact-button">
-              <button class="button-menu button-menu--call"></button>
+              <button class="button-menu button-menu-feedback-call button-menu--call"></button>
               <button class="button-menu button-menu-feedback button-menu--chat"></button>
               <button class="button-menu button-menu--profile"></button>
             </div>
@@ -386,36 +386,61 @@
            </div>
         </main>
          <!-- form -->
-        
-         <form action="#"  id="form" class="feedback">
-          <div class="feedback__button-close">
-            <button class="feedback__button-close-active feedback__button-close-active--style "></button>
+         <dialog id="feedback" class="feedback__modal">
+          <div class="feedback__modal-inner">
+            <form action="#"  id="form" class="feedback__form" >
+              <div class="feedback__button-close">
+                <button class="feedback__button-close-active feedback__button-close-active--style "></button>
+              </div>
+              <h2 class="feedback__title">Обратная связь</h2>
+              <div class="feedback__item">
+                <label for="name" class="feedback__label"></label>   
+                <input type="text" id="name" name="username" class="feedback__input" placeholder="Имя" />
+              </div>
+              <div class="feedback__item">
+                <label for="number" class="feedback__label"> </label>
+                <input type="number" id="number" name="number" class="feedback__input" placeholder="Телефон" />
+              </div>
+              <div class = "feedback__item">
+                <label for="mail" class="feedback__label"></label>
+                <input type="email" id="mail" name="usermail" class="feedback__input" placeholder="Электронная почта" />
+              </div>
+              <div class = "feedback__item">
+                <label for="message" class="feedback__label"></label>
+                <textarea name="text" id="message" class="feedback__input" placeholder="Сообщение"></textarea >
+              </div>
+              <div class="feedback__processing"><span class="feedback__processing-text">Нажимая “отправить”, вы даете согласие на 
+                <span class="feedback__processing-text--style">обработку персональных данных</span> и соглашаетесь с нашей <span class="feedback__processing-text--style">политикой конфиденциальности</span> </span></div>
+              <div class="call__button-submit">
+              <div class="feedback__button-submit">
+                <button class="feedback__button-form" type="submit"  value="Save">Отправить
+                  <span class="feedback__button-form-decor"></span>
+                </button>
+              </div>
+            </form>
           </div>
-          <h2 class="feedback__title">Обратная связь</h2>
-          <div class="feedback__item">
-            <label for="name" class="feedback__label"></label>   
-            <input type="text" id="name" name="username" class="feedback__input" placeholder="Имя" />
+        </dialog>
+        <dialog id="call" class="call__modal">
+          <div class="call__modal-inner">
+            <form action="#"  id="form" class="call__form" >
+              <div class="call__button-close">
+                <button class="call__button-close-active call__button-close-active--style "></button>
+              </div>
+              <h2 class="call__title">Заказать звонок</h2>
+              <div class="call__item">
+                <label for="number" class="call__label"></label>   
+                <input type="number" id="number" name="number" class="call__input" placeholder="Телефон" />
+              </div>
+              <div class="call__processing"><span class="call__processing-text">Нажимая “отправить”, вы даете согласие на 
+                <span class="call__processing-text--style">обработку персональных данных</span> и соглашаетесь с нашей <span class="call__processing-text--style">политикой конфиденциальности</span> </span></div>
+              <div class="call__button-submit">
+                <button class="call__button-form" type="submit"  value="Save">Отправить
+                  <span class="call__button-form-decor"></span>
+                </button>
+              </div>
+            </form>
           </div>
-          <div class="feedback__item">
-            <label for="number" class="feedback__label"> </label>
-            <input type="number" id="number" name="number" class="feedback__input" placeholder="Телефон" />
-          </div>
-          <div class = "feedback__item">
-            <label for="mail" class="feedback__label"></label>
-            <input type="email" id="mail" name="usermail" class="feedback__input" placeholder="Электронная почта" />
-          </div>
-          <div class = "feedback__item">
-            <label for="message" class="feedback__label"></label>
-            <textarea name="text" id="message" class="feedback__input" placeholder="Сообщение"></textarea >
-          </div>
-          <div class="feedback__processing"><span class="feedback__processing-text">Нажимая “отправить”, вы даете согласие на 
-            обработку персональных данных и соглашаетесь с нашей политикой конфиденциальности</span></div>
-          <div class="feedback__button-submit">
-            <button class="feedback__button-form" type="submit"  value="Save">Отправить
-              <span class="feedback__button-form-decor"></span>
-            </button>
-          </div>
-        </form>
+        </dialog>
         <footer class="footer">
           <div class="footer__wrapper">
             <div class="footer__developed-mail">
