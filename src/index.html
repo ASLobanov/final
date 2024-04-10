@@ -395,15 +395,15 @@
               <h2 class="feedback__title">Обратная связь</h2>
               <div class="feedback__item">
                 <label for="name" class="feedback__label"></label>   
-                <input type="text" id="name" name="username" class="feedback__input" placeholder="Имя" />
+                <input type="text" id="name" name="username" class="feedback__input feedback__input-name" placeholder="Имя" />
               </div>
               <div class="feedback__item">
-                <label for="number" class="feedback__label"> </label>
-                <input type="number" id="number" name="number" class="feedback__input" placeholder="Телефон" />
-              </div>
+                <label for="tel" class="feedback__label"> </label>
+                <input type="tel" id="tel" name="tel" maxlength='15' class="feedback__input feedback__input-phone" placeholder="Телефон" />
+              </div>  
               <div class = "feedback__item">
                 <label for="mail" class="feedback__label"></label>
-                <input type="email" id="mail" name="usermail" class="feedback__input" placeholder="Электронная почта" />
+                <input type="email" id="mail" name="usermail" class="feedback__input feedback__input-email " placeholder="Электронная почта" />
               </div>
               <div class = "feedback__item">
                 <label for="message" class="feedback__label"></label>
@@ -428,8 +428,8 @@
               </div>
               <h2 class="call__title">Заказать звонок</h2>
               <div class="call__item">
-                <label for="number" class="call__label"></label>   
-                <input type="number" id="number" name="number" class="call__input" placeholder="Телефон" />
+                <label for="phone" class="call__label"></label>   
+                <input type="phone" id="phone" name="phone" pattern="^\+7[1-9]{10}$"  class="call__input" placeholder="Телефон +7 0-10" required/>
               </div>
               <div class="call__processing"><span class="call__processing-text">Нажимая “отправить”, вы даете согласие на 
                 <span class="call__processing-text--style">обработку персональных данных</span> и соглашаетесь с нашей <span class="call__processing-text--style">политикой конфиденциальности</span> </span></div>

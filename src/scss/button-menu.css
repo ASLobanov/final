@@ -13,8 +13,8 @@
   transition-duration: 1s;
 }
 button:hover {
-  opacity: 0.4;
-  transition-duration: 2s;
+  opacity: 0.5;
+  transition-duration: 1s;
 }
 
 .button-menu--search {

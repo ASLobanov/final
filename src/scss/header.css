@@ -112,3 +112,6 @@
     content: url(../icon/burger-close-icon.svg);
   }
 }
+.header__nav.open-menu.opacity-header {
+  opacity: 0;
+}

@@ -201,7 +201,7 @@ textarea.feedback__input {
   }
 
   .feedback__modal::backdrop {
-    opacity: 0.9;
+    opacity: 0.1;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   }

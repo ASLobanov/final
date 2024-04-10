@@ -76,12 +76,21 @@
   background: rgba(248, 248, 248, 1) url('../icon/checkstatus.svg');
 }
 
+.brand__list-item > li :focus {
+  background-color: rgb(255, 255, 255);
+  border: #b8ffec;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 2px;
+}
 .brand__block-second {
   display: flex;
 }
 
 .brand__list-item {
   display: flex;
+  height: 5rem;
   flex-direction: row;
   align-items: center;
   overflow: scroll;
@@ -104,11 +113,6 @@ a {
 }
 
 .brand__item-repair-brands {
-  border: #b8ffec;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 5px;
-  padding: 2px;
 }
 
 .brand__block-third {
@@ -185,6 +189,7 @@ a {
 
   .brand__list-item {
     width: 100vw;
+    height: 2rem;
   }
 }
 @media (min-width: 767px) and (max-width: 1119px) {
@@ -231,6 +236,9 @@ a {
     padding-left: 5vw;
     width: 100%;
   }
+  .brand__list-item {
+    height: 2rem;
+  }
 }
 @media (min-width: 1119px) {
   .brand__parttitle {
@@ -274,7 +282,6 @@ a {
   .brand__block-third-text.text-read-more {
     display: flex;
     flex-direction: column;
-
     overflow: visible;
   }
 }

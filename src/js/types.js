@@ -5,6 +5,7 @@ import 'swiper/swiper.scss'
 
 // Get width on browser window
 const widthTypes = window.innerWidth
+
 // Initialize Swiper
 if (widthTypes < 767.9999) {
   var swiperTypes = new Swiper('.swiper,.types__swiper', {
