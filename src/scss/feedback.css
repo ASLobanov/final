@@ -1,34 +1,3 @@
-.feedback__wrapper {
-}
-/*
-.feedback {
-  display: none;
-  position: fixed;
-  flex-direction: column;
-  width: 440px;
-  min-height: 940px;
-}
-
-.feedback__title {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  margin: 0;
-  padding: 0 0 0 1rem;
-}
-*/
-
-/*
-.feedback__modal {
-  border: none;
-  padding: 0;
-}
-.feedback__modal-inner {
-  width: 440px;
-  height: 940px;
-  border: 1px solid;
-  padding: 0 0 0 5rem;
-}
-*/
 .feedback__processing-text--style {
   color: rgba(255, 62, 121, 1);
 }
@@ -106,44 +75,18 @@
 }
 
 /* Form */
-.feedback__form {
-}
-.feedback__form-item {
-}
+
 .feedback__label {
   font-size: 1rem;
   display: block;
   margin-top: 1rem;
 }
-/*
-.feedback__input {
-  display: block;
-  min-width: 376px;
-  height: 48px;
-  border-radius: 5px;
-  margin: 0 0 0 1rem;
-  padding-left: 1rem;
-}
 
-.feedback__modal {
-  position: relative;
-  bottom: 99.9rem;
-  left: 28.7rem;
-  user-select: text;
-  visibility: hidden;
-  display: none;
-}
-*/
-
-/*
-@media (min-width: 1140px)
-*/
 textarea.feedback__input {
   min-height: 118px;
   resize: vertical;
 }
-.feedback__modal {
-}
+
 @media (max-width: 767.999px) {
   .feedback__modal[open] {
     max-width: 310px;
@@ -151,8 +94,6 @@ textarea.feedback__input {
     padding: 0;
     border: none;
     margin-left: 0px;
-    position: fixed;
-    inset-block-start: -33rem;
   }
   .feedback__modal::backdrop {
     opacity: 1;
@@ -192,8 +133,6 @@ textarea.feedback__input {
     padding: 0;
     border: none;
     margin-right: 0.00000001%;
-    position: fixed;
-    inset-block-start: -13rem;
     left: 40rem;
     display: flex;
     flex-direction: column;
@@ -244,7 +183,6 @@ textarea.feedback__input {
     border: none;
     margin-right: 0.00000001%;
     position: fixed;
-    inset-block-start: -13rem;
     left: 40rem;
     display: flex;
     flex-direction: column;
@@ -294,10 +232,8 @@ textarea.feedback__input {
     padding: 0;
     border: none;
     margin-right: 16%;
-    position: fixed;
     inset-block-start: 0px;
     margin-top: auto;
-
     display: flex;
     flex-direction: column;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
@@ -334,25 +270,3 @@ textarea.feedback__input {
     right: 1.4rem;
   }
 }
-
-/*
-.feedback__modal::backdrop {
-  opacity: 0.9;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-}
-*/
-/*
-.main.feedback-open {
-  opacity: 0.1;
-}
-.footer.feedback-open {
-  opacity: 0.1;
-}
-.wrapper.feedback-open {
-  display: flex;
-  width: 1440px;
-  height: 940px;
-  overflow: hidden;
-}
-*/

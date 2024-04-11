@@ -1,5 +1,4 @@
-.footer {
-}
+
 .footer__wrapper {
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -8,13 +7,11 @@
   background-color: rgba(248, 248, 248, 1);
   font-size: 14px;
 }
-.footer__developed-mail {
-}
+
 .footer__developed-mail > a {
   white-space: pre-line;
 }
-.footer__offer {
-}
+
 
 @media (min-width: 1120px) {
   .footer__wrapper {
