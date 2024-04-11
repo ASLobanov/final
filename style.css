@@ -1384,7 +1384,9 @@ textarea.feedback__input {
     border: none;
     margin-left: 0px;
     position: fixed;
-    inset-block-start: -33rem;
+    inset-block-start: 0px;
+    inset-block-end: 0px;
+    max-width: calc(100% - 2em - 6px);
   }
   .feedback__modal::backdrop {
     opacity: 1;
