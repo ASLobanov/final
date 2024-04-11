@@ -88,6 +88,11 @@ textarea.feedback__input {
 }
 
 @media (max-width: 767.999px) {
+  dialog {
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+  }
   .feedback__modal[open] {
     max-width: 310px;
     min-height: 676px;
@@ -123,6 +128,11 @@ textarea.feedback__input {
 }
 
 @media (min-width: 768px) and (max-width: 1118.999px) {
+  dialog {
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+  }
   .wrapper.feedback__lock {
     overflow: hidden;
     height: 1024px;
@@ -172,6 +182,11 @@ textarea.feedback__input {
 }
 
 @media (min-width: 1120px) {
+  dialog {
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+  }
   .wrapper.feedback__lock {
     overflow: hidden;
     height: 1045px;
@@ -183,7 +198,7 @@ textarea.feedback__input {
     border: none;
     margin-right: 0.00000001%;
     position: fixed;
-    left: 40rem;
+
     display: flex;
     flex-direction: column;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
@@ -222,6 +237,11 @@ textarea.feedback__input {
 }
 
 @media (min-width: 1440px) {
+  dialog {
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+  }
   .wrapper.feedback__lock {
     overflow: hidden;
     height: 1045px;
@@ -231,9 +251,8 @@ textarea.feedback__input {
     min-height: 1045px;
     padding: 0;
     border: none;
-    margin-right: 16%;
+    margin-right: 9%;
     inset-block-start: 0px;
-    margin-top: auto;
     display: flex;
     flex-direction: column;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);

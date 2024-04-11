@@ -11,8 +11,8 @@
     margin: 0;
     z-index: 2;
     background-color: rgba(255, 255, 255, 1);
-    transition: all 1s;
-    animation: menu 1s ease;
+    transition: all 0.5s;
+    animation: menu 0.5s ease;
   }
   @keyframes menu {
     from {
@@ -53,8 +53,8 @@
     margin: 0;
     z-index: 2;
     background-color: rgba(255, 255, 255, 1);
-    transition: all 1s;
-    animation: menu 1s ease;
+    transition: all 0.5s;
+    animation: menu 0.5s ease;
     box-shadow: 16px 0 52px 0 #0e185033;
   }
 
@@ -162,14 +162,12 @@
   flex-direction: row;
   gap: 1rem;
 }
-.menu__contact-email {
-}
+
 .menu__contact-email--style-email {
   font-size: 1rem;
   font-weight: 500;
 }
-.menu__contact-call {
-}
+
 .menu__lang {
   display: flex;
   flex-direction: row;

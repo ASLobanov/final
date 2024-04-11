@@ -1,7 +1,7 @@
 const wrapper = document.querySelector('.wrapper')
 const openButton = document.querySelector('.button-menu-feedback-call ')
 const closeButton = document.querySelector('.call__button-close-active ')
-const closeMenuCall = document.querySelector('.menu,.open-menu')
+const closeMenuCall = document.querySelector('.menu')
 const closeHeaderMenuCall = document.querySelector('.header__nav,.open-menu')
 
 openButton.addEventListener('click', () => {
