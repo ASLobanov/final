@@ -201,7 +201,7 @@ textarea.feedback__input {
 
     display: flex;
     flex-direction: column;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    box-shadow: -10px 0px 20px 0px rgba(14, 24, 80, 0.2);
   }
 
   .feedback__modal::backdrop {
