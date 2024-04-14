@@ -138,9 +138,10 @@
 .menu__nav-item--style:focus {
   color: #7e7e82;
 }
-.menu__nav-item :focus::before {
-  content: ' ';
+.menu__nav-item-before :focus::before {
+  content: '';
   display: flex;
+  align-items: center;
   height: 32px;
   width: 1px;
   border-style: solid;
