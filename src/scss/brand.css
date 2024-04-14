@@ -76,7 +76,7 @@
   background: rgba(248, 248, 248, 1) url('../icon/checkstatus.svg');
 }
 
-.brand__list-item > li :focus {
+.brand__list-item > li:focus {
   background-color: rgb(255, 255, 255);
   border: #b8ffec;
   border-width: 2px;
@@ -217,7 +217,6 @@ a {
   .brand__block-third-text {
     overflow: hidden;
     width: 90%;
-
     display: -webkit-box;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;

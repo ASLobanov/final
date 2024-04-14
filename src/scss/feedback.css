@@ -99,6 +99,7 @@ textarea.feedback__input {
     padding: 0;
     border: none;
     margin-left: 0px;
+    box-shadow: -10px 0px 20px 0px rgba(14, 24, 80, 0.2);
   }
   .feedback__modal::backdrop {
     opacity: 1;
@@ -139,18 +140,18 @@ textarea.feedback__input {
   }
   .feedback__modal[open] {
     min-width: 440px;
-    min-height: 1045px;
+    min-height: 1024px;
     padding: 0;
     border: none;
     margin-right: 0.00000001%;
     left: 40rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    box-shadow: -10px 0px 20px 0px rgba(14, 24, 80, 0.2);
   }
 
   .feedback__modal::backdrop {
-    opacity: 0.1;
+    opacity: 0.7;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   }
@@ -255,7 +256,7 @@ textarea.feedback__input {
     inset-block-start: 0px;
     display: flex;
     flex-direction: column;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    box-shadow: -10px 0px 20px 0px rgba(14, 24, 80, 0.2);
   }
 
   .feedback__modal::backdrop {

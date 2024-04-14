@@ -3,21 +3,15 @@ const openButtonPopup = document.querySelector('.button-menu-feedback')
 const closeButtonPopup = document.querySelector(
   '.feedback__button-close-active'
 )
-const closeMenu = document.querySelector('.menu')
-const closeHeaderMenu = document.querySelector('.header__nav,.open-menu')
 
 openButtonPopup.addEventListener('click', () => {
   feedback.showModal()
   wrapperBody.classList.add('feedback__lock')
-  closeMenu.classList.remove('open-menu')
-  closeHeaderMenu.classList.add('opacity-header')
 })
 
 closeButtonPopup.addEventListener('click', () => {
   feedback.close()
   wrapperBody.classList.remove('feedback__lock')
-  closeHeaderMenu.classList.remove('opacity-header')
-  closeMenu.classList.add('open-menu')
 })
 
 document.addEventListener('keydown', function (event) {

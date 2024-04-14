@@ -85,7 +85,9 @@
   .price-repair__title-table {
     display: none;
   }
-
+  .swiper-pagination.price-repair__swiper__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 90%;
+  }
   .price-repair__swiper {
     max-width: 260px;
     min-height: 240px;
@@ -98,9 +100,6 @@
   }
   .price-repair__swiper-slide--button {
     transform: translate(110px, -23px);
-  }
-  .price-repair__swiper__pagination {
-    padding-top: 10vw;
   }
 }
 @media (min-width: 767.99999px) and (max-width: 1449.99px) {
