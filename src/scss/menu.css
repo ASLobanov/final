@@ -138,10 +138,8 @@
 .menu__nav-item--style:focus {
   color: #7e7e82;
 }
-.menu__nav-item-before :focus::before {
+.menu__nav-item :focus::before {
   content: '';
-  display: flex;
-  align-items: center;
   height: 32px;
   width: 1px;
   border-style: solid;
@@ -150,7 +148,9 @@
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   transform: translate(-1rem);
-  -webkit-transform: translate(-1rem);
+  position: relative;
+  right: 1rem;
+  top: 1.5rem;
 }
 .menu__contact {
   padding-top: 16.75rem;
