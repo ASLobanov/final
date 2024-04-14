@@ -225,7 +225,7 @@
   background: rgba(248, 248, 248, 1) url(./static/checkstatus.svg);
 }
 
-.brand__list-item > li :focus {
+.brand__list-item :focus {
   background-color: rgb(255, 255, 255);
   border: #b8ffec;
   border-width: 2px;
@@ -732,7 +732,7 @@ a {
 .menu__nav-item--style:focus {
   color: #7e7e82;
 }
-.menu__nav-item > li :focus::before {
+.menu__nav-item :focus::before {
   content: ' ';
   display: flex;
   height: 32px;
