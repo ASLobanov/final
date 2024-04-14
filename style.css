@@ -112,9 +112,6 @@
     content: url(./static/burger-close-icon.svg);
   }
 }
-.header__nav.open-menu.opacity-header {
-  opacity: 0;
-}
 
 .button-header {
   background: none;
@@ -228,7 +225,7 @@
   background: rgba(248, 248, 248, 1) url(./static/checkstatus.svg);
 }
 
-.brand__list-item > li :focus {
+.brand__list-item > li:focus {
   background-color: rgb(255, 255, 255);
   border: #b8ffec;
   border-width: 2px;
@@ -369,7 +366,6 @@ a {
   .brand__block-third-text {
     overflow: hidden;
     width: 90%;
-
     display: -webkit-box;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
@@ -1043,7 +1039,9 @@ button:hover {
   .price-repair__title-table {
     display: none;
   }
-
+  .swiper-pagination.price-repair__swiper__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 90%;
+  }
   .price-repair__swiper {
     max-width: 260px;
     min-height: 240px;
@@ -1056,9 +1054,6 @@ button:hover {
   }
   .price-repair__swiper-slide--button {
     transform: translate(110px, -23px);
-  }
-  .price-repair__swiper__pagination {
-    padding-top: 10vw;
   }
 }
 @media (min-width: 767.99999px) and (max-width: 1449.99px) {
@@ -1323,6 +1318,7 @@ textarea.feedback__input {
     padding: 0;
     border: none;
     margin-left: 0px;
+    box-shadow: -10px 0px 20px 0px rgba(14, 24, 80, 0.2);
   }
   .feedback__modal::backdrop {
     opacity: 1;
@@ -1363,18 +1359,18 @@ textarea.feedback__input {
   }
   .feedback__modal[open] {
     min-width: 440px;
-    min-height: 1045px;
+    min-height: 1024px;
     padding: 0;
     border: none;
     margin-right: 0.00000001%;
     left: 40rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    box-shadow: -10px 0px 20px 0px rgba(14, 24, 80, 0.2);
   }
 
   .feedback__modal::backdrop {
-    opacity: 0.1;
+    opacity: 0.7;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   }
@@ -1479,7 +1475,7 @@ textarea.feedback__input {
     inset-block-start: 0px;
     display: flex;
     flex-direction: column;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    box-shadow: -10px 0px 20px 0px rgba(14, 24, 80, 0.2);
   }
 
   .feedback__modal::backdrop {
@@ -1611,6 +1607,7 @@ textarea.feedback__input {
     margin-left: 0px;
     position: fixed;
     inset-block-start: 0;
+    box-shadow: -10px 0px 20px 0px rgba(14, 24, 80, 0.2);
   }
   .call__modal::backdrop {
     opacity: 1;
@@ -1651,17 +1648,17 @@ textarea.feedback__input {
   }
   .call__modal[open] {
     min-width: 440px;
-    min-height: 1045px;
+    min-height: 1024px;
     padding: 0;
     border: none;
     margin-right: 0.00000001%;
     left: 40rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    box-shadow: -10px 0px 20px 0px rgba(14, 24, 80, 0.2);
   }
   .call__modal::backdrop {
-    opacity: 0.1;
+    opacity: 0.7;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   }
@@ -1698,11 +1695,11 @@ textarea.feedback__input {
   }
   .wrapper.call__lock {
     overflow: hidden;
-    height: 1045px;
+    height: 1024px;
   }
   .call__modal[open] {
     min-width: 440px;
-    min-height: 1045px;
+    min-height: 1024px;
     padding: 0;
     border: none;
     margin-right: 0.00000001%;
@@ -1710,7 +1707,7 @@ textarea.feedback__input {
     left: 40rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    box-shadow: -10px 0px 20px 0px rgba(14, 24, 80, 0.2);
   }
   .call__modal::backdrop {
     opacity: 0.9;
