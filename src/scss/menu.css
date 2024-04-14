@@ -138,7 +138,7 @@
 .menu__nav-item--style:focus {
   color: #7e7e82;
 }
-.menu__nav-item > li :focus::before {
+.menu__nav-item :focus::before {
   content: ' ';
   display: flex;
   height: 32px;
