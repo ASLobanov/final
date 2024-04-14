@@ -41,7 +41,7 @@
 
 .call__processing {
   max-width: 376px;
-  margin: 1rem 0 0 1rem;
+  margin: 1rem 0 0 0rem;
 }
 .call__processing-text {
   font-size: 0.9rem;
@@ -88,7 +88,7 @@
     height: 1024px;
   }
   .call__modal[open] {
-    max-width: 310px;
+    max-width: 320px;
     min-height: 676px;
     padding: 0;
     border: none;
@@ -108,7 +108,7 @@
     margin-bottom: 2.5rem;
   }
   .call__modal-inner {
-    max-width: 304px;
+    max-width: 320px;
     max-height: 676px;
     padding: 1rem;
   }
@@ -122,6 +122,9 @@
   }
   .call__title::before {
     right: 1.4rem;
+  }
+  .call__processing {
+    max-width: 280px;
   }
 }
 @media (min-width: 768px) and (max-width: 1118.999px) {
