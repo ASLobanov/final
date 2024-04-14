@@ -733,8 +733,8 @@ a {
   color: #7e7e82;
 }
 .menu__nav-item :focus::before {
-  display: inline;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
   content: '';
   height: 32px;
   width: 1px;
@@ -743,9 +743,9 @@ a {
   background-color: #41f6d7;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  transform: translate(-0.5rem);
+  transform: translate(-1rem);
 }
-.menu__nav-item-before {
+.menu__nav-item-wrap {
   display: flex;
   flex-direction: row;
 }
