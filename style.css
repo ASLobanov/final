@@ -732,7 +732,7 @@ a {
 .menu__nav-item--style:focus {
   color: #7e7e82;
 }
-.menu__nav-item-before :focus::before {
+.menu__nav-item :focus::before {
   content: '';
   display: flex;
   align-items: center;
@@ -744,7 +744,7 @@ a {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   transform: translate(-1rem);
-  -webkit-transform: translate(-1rem);
+  -webkit-transform: translate(-1rem, 2rem);
 }
 .menu__contact {
   padding-top: 16.75rem;
