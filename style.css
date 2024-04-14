@@ -742,6 +742,9 @@ a {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   transform: translate(-1rem);
+  position: relative;
+  right: 1rem;
+  top: 1.5rem;
 }
 .menu__contact {
   padding-top: 16.75rem;
