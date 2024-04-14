@@ -733,7 +733,7 @@ a {
   color: #7e7e82;
 }
 .menu__nav-item > li :focus::before {
-  content: '';
+  content: ' ';
   display: flex;
   height: 32px;
   width: 1px;
